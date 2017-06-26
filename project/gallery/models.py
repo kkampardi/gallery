@@ -13,3 +13,7 @@ class Gallery(models.Model):
 
     def __str__(self):
         return self.title
+
+class Image(models.Model):
+    image_file = FilerImageField()
+    obj = models.ForeignKey(Gallery)
