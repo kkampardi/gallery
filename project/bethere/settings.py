@@ -75,6 +75,7 @@ STATIC_ROOT = os.path.join(DATA_DIR, 'static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'bethere', 'static'),
 )
+
 SITE_ID = 1
 
 
@@ -149,7 +150,8 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'bethere',
-    'gallery'
+    'gallery',
+    'polls'
 )
 
 LANGUAGES = (
@@ -200,7 +202,7 @@ DATABASES = {
 }
 
 MIGRATION_MODULES = {
-    
+
 }
 
 THUMBNAIL_PROCESSORS = (
