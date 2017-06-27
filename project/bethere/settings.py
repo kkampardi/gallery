@@ -151,7 +151,6 @@ INSTALLED_APPS = (
     'djangocms_video',
     'bethere',
     'gallery',
-    'polls'
 )
 
 LANGUAGES = (
@@ -179,10 +178,8 @@ CMS_LANGUAGES = {
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('fullwidth.html', 'Fullwidth'),
-    ('home.html', 'Gallery Home'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('list.html', 'Gallery List - Home'),
+
 )
 
 CMS_PERMISSION = True
