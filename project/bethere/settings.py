@@ -75,6 +75,7 @@ STATIC_ROOT = os.path.join(DATA_DIR, 'static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'bethere', 'static'),
 )
+
 SITE_ID = 1
 
 
@@ -149,7 +150,7 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'bethere',
-    'gallery'
+    'gallery',
 )
 
 LANGUAGES = (
@@ -177,10 +178,8 @@ CMS_LANGUAGES = {
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('fullwidth.html', 'Fullwidth'),
-    ('home.html', 'Gallery Home'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('list.html', 'Gallery List - Home'),
+
 )
 
 CMS_PERMISSION = True
@@ -200,7 +199,7 @@ DATABASES = {
 }
 
 MIGRATION_MODULES = {
-    
+
 }
 
 THUMBNAIL_PROCESSORS = (

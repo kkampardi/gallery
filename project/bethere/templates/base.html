@@ -14,7 +14,7 @@
                 padding-right: 20px;
             }
             .container {
-                width: 940px;
+
                 margin: 0 auto
             }
             .content {
@@ -71,7 +71,6 @@
     <body>
         {% cms_toolbar %}
         <!-- header -->
-
         <header id="header" class="header">
           <div class="container-fluid">
             <hgroup>
@@ -104,74 +103,89 @@
             </hgroup>
           </div>
         </header>
-
         <!-- header -->
-
         <main class="main-wrapper" id="container">
             {% block content %}{% endblock content %}
         </main>
-
+        <!-- end header -->
         <!-- footer -->
-
         <footer class="footer">
-          <h3>Stay connected with us</h3>
-          <div class="container footer-bot">
-            <div class="row">
 
-              <!-- logo -->
+            <h3>Stay connected with us</h3>
 
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <img src="images/footer-logo.png" alt="Picxa" title="Picxa"/>
-                <p class="copy-right">&copy; Reserved Picxa inc 2016.</p>
-              </div>
+            <div class="container footer-bot">
 
-              <!-- logo -->
+                <div class="row">
 
-              <!-- address -->
+                	<!-- logo -->
 
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
-                <address>
-                <p>200 Broadway Av</p>
-                <p>West Beach SA 5024  Australia</p>
-                </address>
-              </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
 
-              <!-- address -->
+                    	<img src="images/footer-logo.png" alt="Picxa" title="Picxa">
 
-              <!-- email -->
+                    	<p class="copy-right">© Reserved Picxa inc 2016.</p>
 
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
-                <p><a href="mailto:contact@Picxa.com">contact@Picxa.com</a></p>
-                <p>01 (2) 34 56 78</p>
-              </div>
+                    </div>
 
-              <!-- email -->
+                    <!-- logo -->
 
-              <!-- social -->
+                    <!-- address -->
 
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
-                <ul class="social">
-                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-delicious" aria-hidden="true"></i></a></li>
-                </ul>
-                <p class="made-by">Made with by <i class="fa fa-heart" aria-hidden="true"></i> <a href="http://www.designstub.com/" target="_blank">Designstub</a>
-                <p>
-              </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
 
-              <!-- social -->
+                    	<address><p>200 Broadway Av</p>
+        <p>West Beach SA 5024  Australia</p></address>
+
+                    </div>
+
+                    <!-- address -->
+
+                    <!-- email -->
+
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
+
+                            <p><a href="mailto:contact@Picxa.com">contact@Picxa.com</a></p>
+
+                            <p>01 (2) 34 56 78</p>
+
+                    </div>
+
+                    <!-- email -->
+
+                    <!-- social -->
+
+                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
+
+                     	<ul class="social">
+
+                        	<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+
+                            <li><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+
+                            <li><a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
+
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                            <li><a href="#"><i class="fa fa-delicious" aria-hidden="true"></i></a></li>
+
+                        </ul>
+
+                    	<p class="made-by">Made with by <i class="fa fa-heart" aria-hidden="true"></i> <a href="http://www.designstub.com/" target="_blank">Designstub</a></p><p>
+
+                    </p></div>
+
+                    <!-- social -->
+
+                </div>
 
             </div>
-          </div>
-        </footer>
 
-        <!-- footer -->
+        </footer>
+        <!-- end footer -->
 
         {% render_block "js" %}
-
-
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{% static 'js/assets/jquery.min.js' %}"><\/script>')</script>
