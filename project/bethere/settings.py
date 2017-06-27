@@ -150,6 +150,7 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'bethere',
+    'gallery_cms_integration',
     'gallery',
 )
 

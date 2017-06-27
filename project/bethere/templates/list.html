@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load staticfiles cms_tags thumbnail %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+	{% placeholder "content" %}
+    <!-- image Gallery -->
+    {% block polls_content %}
+    {% endblock %}
+{% endblock content %}
+<!-- Image Gallery -->
