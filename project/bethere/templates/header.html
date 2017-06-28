@@ -1,0 +1,32 @@
+{% load staticfiles cms_tags menu_tags sekizai_tags %}
+
+{% cms_toolbar %}
+<!-- header -->
+<header id="header" class="header">
+    <div class="container-fluid">
+        <hgroup>
+              <!-- logo -->
+              <h1> <a href="{% static 'index1.html' %}" title="Picxa">
+                  <img src="{% static 'images/logo.png' %}" alt="Picxa" title="Picxa"/></a>
+              </h1>
+              <!-- logo -->
+              <!-- nav -->
+              <nav>
+                <div class="menu-expanded">
+                  <div class="nav-icon">
+                    <div id="menu" class="menu"></div>
+                    <p>menu</p>
+                  </div>
+                  <div class="cross"> <span class="linee linea1"></span> <span class="linee linea2"></span> <span class="linee linea3"></span> </div>
+                  <div class="main-menu">
+                    <ul>
+                      {% show_menu 0 100 100 100 %}
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <!-- nav -->
+        </hgroup>
+    </div>
+</header>
+<!-- header -->
